@@ -1,0 +1,222 @@
+/* ===============================
+   GLOBAL RESET & THEME
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-main: #0b0f1a;
+  --bg-card: #121826;
+  --bg-soft: #1a2035;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-dim: #6b7280;
+
+  --accent: #6366f1;      /* Indigo */
+  --accent-soft: #818cf8;
+  --success: #22c55e;
+
+  --border: #1f2937;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+
+  background: radial-gradient(
+      1200px 600px at top,
+      #11162a 0%,
+      var(--bg-main) 45%
+    )
+    no-repeat;
+
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 24, 39, 0.9),
+    rgba(11, 15, 26, 0.9)
+  );
+}
+
+.header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   LAYOUT CONTAINER
+================================ */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+/* ===============================
+   ARTICLE CARD (HOME)
+================================ */
+.card {
+  background: linear-gradient(
+    160deg,
+    var(--bg-card),
+    var(--bg-soft)
+  );
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 18px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
+}
+
+.card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.card .date {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* ===============================
+   ARTICLE DETAIL PAGE
+================================ */
+.article-detail button {
+  background: none;
+  border: none;
+  color: var(--accent-soft);
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.article-detail button:hover {
+  text-decoration: underline;
+}
+
+.article-detail h1 {
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.article-detail a {
+  color: var(--accent-soft);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.article-detail a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   BADGE
+================================ */
+.badge {
+  display: inline-block;
+  margin: 16px 0 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.badge.enhanced {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--success);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+}
+
+/* ===============================
+   ARTICLE CONTENT
+================================ */
+.content p {
+  line-height: 1.75;
+  font-size: 15px;
+  color: var(--text-main);
+  margin-bottom: 14px;
+}
+
+/* ===============================
+   REFERENCES SECTION
+================================ */
+.references {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.references h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.references ul {
+  padding-left: 18px;
+}
+
+.references li {
+  margin-bottom: 8px;
+}
+
+.references a {
+  color: var(--accent);
+  font-size: 14px;
+  word-break: break-all;
+}
+
+/* ===============================
+   LOADER
+================================ */
+.loading,
+[role="status"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 640px) {
+  .article-detail h1 {
+    font-size: 22px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+}
