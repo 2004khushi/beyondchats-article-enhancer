@@ -161,7 +161,7 @@ Laravel Backend API
 
 ## 🌐 Live Frontend Link
 
-👉 **Live Demo:** https://your-frontend-deployment-link.vercel.app
+👉 **Live Demo:** https://beyondchats-article-enhancer.vercel.app/
 
 
 ### ⚠️ Important Note (Please Read)
