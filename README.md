@@ -21,12 +21,10 @@ Built using **Laravel (Backend API)** + **React (Frontend)** + **Node.js (AI Ser
 
 **Frontend**
 - React (Vite)
-- Axios
-- CSS (Dark mode UI)
 
 **Backend**
 - Laravel (REST APIs)
-- MySQL / SQLite
+- SQLite
 
 **AI Service**
 - Node.js
@@ -124,7 +122,7 @@ Secure API Keys
 <td width="25%" align="center" style="background:#064e3b;color:white;padding:14px;border-radius:10px">
 
 ### 🗄️ Database  
-**MySQL / SQLite**
+**SQLite**
 
 Original Articles  
 Enhanced Articles  
