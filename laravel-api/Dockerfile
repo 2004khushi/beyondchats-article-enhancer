@@ -17,7 +17,6 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
-RUN php artisan key:generate
 
 RUN chown -R www-data:www-data /var/www/html
 RUN chmod -R 775 storage bootstrap/cache database
