@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "https://127.0.0.1:8000/api/articles";
+const API = "http://localhost:8000/api/articles";
 
 export const getArticles = async () => {
   try {
