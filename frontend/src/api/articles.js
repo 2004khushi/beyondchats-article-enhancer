@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api/articles";
+const API = "https://127.0.0.1:8000/api/articles";
 
 export const getArticles = async () => {
   try {
@@ -8,7 +8,7 @@ export const getArticles = async () => {
     return res.data ? res.data : [];
   } catch (error) {
     console.error("Failed to fetch articles:", error);
-    return []; 
+    return null; 
   }
 }
 export const getArticleById = async (id) => {

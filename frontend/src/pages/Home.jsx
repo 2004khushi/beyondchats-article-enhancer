@@ -46,7 +46,7 @@ export default function Home({ onSelectArticle }) {
   if (error) {
     return (
       <p>
-        Sorry, API fetching for articles was not successful. Please try again later.
+        Sorry, API fetching for articles was not successful. <br /><br />Please run  cd laravel-api then  php artisan serve in the terminal.
       </p>
     );
   }
